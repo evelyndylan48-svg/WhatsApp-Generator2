@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WhatsApp Number Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>WhatsApp Number Generator</h1>
+        <label>
+            US Area Code (3 digits): 
+            <input type="text" id="areaCode" maxlength="3" />
+        </label>
+        <br>
+        <label>
+            How many numbers (max 5000): 
+            <input type="number" id="limit" min="1" max="5000" value="200" />
+        </label>
+        <br>
+        <button onclick="generateNumbers()">Generate</button>
+        <div id="result"></div>
+        <button id="downloadBtn" style="display:none;" onclick="downloadNumbers()">Download Numbers (.txt)</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
